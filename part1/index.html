@@ -9,7 +9,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   	<script>
 		// WRITE YOUR CODE HERE
-		$(function () {
+    $(function () {
             $("#vprospect").click(function() {
                 if ($("#solution #vprospect").is(":visible")){
                     $("#solution #vprospect").hide();
@@ -17,6 +17,7 @@
                     $("#solution").load("solutions.html #vprospect");
                 }
             });
+            
             $("#vconvert").click(function() {
                 if ($("#solution #vconvert").is(":visible")){
                     $("#solution #vconvert").hide();
@@ -24,6 +25,7 @@
                     $("#solution").load("solutions.html #vconvert");
                 }
             });
+            
             $("#vretain").click(function() {
                 if ($("#solution #vretain").is(":visible")){
                     $("#solution #vretain").hide();
@@ -31,7 +33,7 @@
                     $("#solution").load("solutions.html #vretain");
                 }
             });
-		});
+  });
     </script>
 </head>
 
