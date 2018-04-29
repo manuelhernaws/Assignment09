@@ -12,7 +12,7 @@
         $(function () {
             $("#vprospect").click(function() {
                 if ($("#solution #vprospect").is(":visible")){
-                    $("#solution #vprospect").hide();
+                    $("#solution #vprospect").hide("solutions.html");
                 } else {
                     $("#solution").load("solutions.html #vprospect");
                 }
@@ -20,7 +20,7 @@
             
             $("#vconvert").click(function() {
                 if ($("#solution #vconvert").is(":visible")){
-                    $("#solution #vconvert").hide();
+                    $("#solution #vconvert").hide("solutions.html");
                 } else {
                     $("#solution").load("solutions.html #vconvert");
                 }
@@ -28,7 +28,7 @@
             
             $("#vretain").click(function() {
                 if ($("#solution #vretain").is(":visible")){
-                    $("#solution #vretain").hide();
+                    $("#solution #vretain").hide("solutions.html");
                 } else {
                     $("#solution").load("solutions.html #vretain");
                 }
