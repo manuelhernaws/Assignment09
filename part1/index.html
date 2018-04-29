@@ -10,35 +10,27 @@
   	<script>
 		// WRITE YOUR CODE HERE
 		$(function () {
-			$("#vprospect").click(function() {
-				if ($("#vprospect1").is(":visible")) {
-					$("#vprospect1").hide("solutions.html")
-				} else {
-					$("#solution").load("solutions.html #vprospect1", function () {
-						$("#vconvert1, #vretain1").hide("solutions.html");
-					});
-				}
-			});
-			
-			$("#vconvert").click(function() {
-				if ($("#vconvert1").is(":visible")) {
-					$("#vconvert1").hide("solutions.html")
-				} else {
-					$("#solution").load("solutions.html #vconvert1", function () {
-						$("#vprospect1, #vretain1").hide("solutions.html");
-					});
-				}
-			});
-			
-			$("#vretain").click(function() {
-				if ($("#vretain1").is(":visible")) {
-					$("#vretain1").hide("solutions.html")
-				} else {
-					$("#solution").load("solutions.html #vretain1", function () {
-						$("#vprospect1, #vconvert1").hide("solutions.html");
-					});
-				}
-			});
+            $("#vprospect").click(function() {
+                if ($("#solution #vprospect").is(":visible")){
+                    $("#solution #vprospect").hide();
+                } else {
+                    $("#solution").load("solutions.html #vprospect");
+                }
+            });
+            $("#vconvert").click(function() {
+                if ($("#solution #vconvert").is(":visible")){
+                    $("#solution #vconvert").hide();
+                } else {
+                    $("#solution").load("solutions.html #vconvert");
+                }
+            });
+            $("#vretain").click(function() {
+                if ($("#solution #vretain").is(":visible")){
+                    $("#solution #vretain").hide();
+                } else {
+                    $("#solution").load("solutions.html #vretain");
+                }
+            });
 		});
     </script>
 </head>
