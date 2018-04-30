@@ -12,12 +12,13 @@
 		$(function() {
 		$.get("team.xml", function(data) { 
 			$(data).find("management").children().each(function() {
-				$("#team").append("<h3>" + 
-					$(this).find('name').text() + "</h3><p>" + 
-					$(this).find('title').text() + "<br>" +  
+				$("#team").append("<h4>" + 
+					$(this).find('name').text() + "<br>" + 
+					$(this).find('title').text() + "</h4>" +  
 					$(this).find('bio').text() + "</p>");
 			});
 		});
+	});
     </script>
 </head>
 
